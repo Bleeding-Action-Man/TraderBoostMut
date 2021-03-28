@@ -30,7 +30,7 @@ Gives player a speed boost at the match start, and trader time in between waves:
 # Value for speed boost | Recommended: Between 500 - 1000 (More than 1000 and you'll become flash)
 iSpeedBoost=750
 # If this is set to anything above 0, you will get extra 'boost' time (duration) AFTER the wave has already started
-iAfterWaveStartBoost=10
+iAfterWaveStartBoost=0
 # Speed boost duration for match start | This is recommended to be 10 because countdown for match start is 10
 iMatchStartBoost=10
 # Message to show at MatchStart boost
@@ -50,8 +50,7 @@ ColorList=(ColorName="Blue",ColorTag="%b",Color=(B=200,G=100,R=0,A=0))
 ColorList=(ColorName="Teal",ColorTag="%t",Color=(B=113,G=179,R=60,A=0))
 ColorList=(ColorName="Violet",ColorTag="%v",Color=(B=139,G=0,R=255,A=0))
 ColorList=(ColorName="White",ColorTag="%w",Color=(B=200,G=200,R=200,A=0))
-# Better to keep debugging False :)
-bDebug=True[/code]
+[/code]
 
 [h1][b][u]File Names[/u][/b][/h1]
 
