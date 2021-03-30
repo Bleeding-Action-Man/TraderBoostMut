@@ -147,6 +147,6 @@ defaultproperties
 {
   // Mandatory Vars
   GroupName = "KF-TraderBoostMut"
-  FriendlyName = "Trader Booster - v1.2"
+  FriendlyName = "Trader Booster - v1.3"
   Description = "Gives all players a speed boost on trader time; Made by Vel-San /w help of Marco"
 }
