@@ -50,33 +50,21 @@ function Tick(float DeltaTime)
   }
 }
 
-function ServerMessage(string Msg)
+function ServerMessage(string Msg, Pawn P)
 {
-  local Controller C;
-  local PlayerController PC;
-  for (C = Level.ControllerList; C != none; C = C.nextController)
+  if (P != none)
   {
-    PC = PlayerController(C);
-    if (PC != none)
-    {
-      SetColor(Msg);
-      PC.ClientMessage(Msg);
-    }
+    SetColor(Msg);
+    P.ClientMessage(Msg);
   }
 }
 
-function CriticalServerMessage(string Msg)
+function CriticalServerMessage(string Msg, Pawn P)
 {
-  local Controller C;
-  local PlayerController PC;
-  for (C = Level.ControllerList; C != none; C = C.nextController)
+  if (P != none)
   {
-    PC = PlayerController(C);
-    if (PC != none)
-    {
-      SetColor(Msg);
-      PC.ClientMessage(Msg, 'CriticalEvent');
-    }
+    SetColor(Msg);
+    P.ClientMessage(Msg, 'CriticalEvent');
   }
 }
 
@@ -147,6 +135,6 @@ defaultproperties
 {
   // Mandatory Vars
   GroupName = "KF-TraderBoostMut"
-  FriendlyName = "Trader Booster - v1.3"
+  FriendlyName = "Trader Booster - v1.4"
   Description = "Gives all players a speed boost on trader time; Made by Vel-San /w help of Marco"
 }
